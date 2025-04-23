@@ -2,7 +2,6 @@
 FROM node:23-alpine
 # Set environment variables
 ENV NODE_ENV=production
-ENV PORT=3000
 # Create app directory
 
 # Set working directory
