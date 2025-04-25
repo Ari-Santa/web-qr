@@ -7,6 +7,9 @@ services:
       - "4000:4000"
     networks:
       - appnet
+    volumes:
+      - .env:/app/.env
+      - ./public/styles.css:/app/public/styles.css
 
   nginx:
     image: nginx:latest
