@@ -1,7 +1,7 @@
 services:
   nodeapp:
     build: .
-    container_name: my-node-app
+    container_name: web-qr-node-app
     restart: always
     ports:
       - "4000:4000"
@@ -10,7 +10,7 @@ services:
 
   nginx:
     image: nginx:latest
-    container_name: my-nginx
+    container_name: web-qr-nginx
     restart: always
     ports:
       - "81:81"

@@ -1,5 +1,5 @@
 # Use official Node.js image
-FROM node:23-alpine
+FROM node:slim
 # Set environment variables
 ENV NODE_ENV=production
 # Create app directory
