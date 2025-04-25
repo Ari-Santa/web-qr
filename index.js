@@ -7,7 +7,7 @@ const path = require('path');
 dotenv.config();
 
 const app = express();
-const port = 3000;
+const port = 4000;
 
 // Serve static files
 app.use(express.static(path.join(__dirname, 'public')));

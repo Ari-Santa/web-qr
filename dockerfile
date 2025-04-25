@@ -2,7 +2,6 @@
 FROM node:23-alpine
 # Set environment variables
 ENV NODE_ENV=production
-ENV PORT=3000
 # Create app directory
 
 # Set working directory
@@ -16,7 +15,7 @@ RUN npm install
 COPY . .
 
 # Expose the app port (adjust if different)
-EXPOSE 3000
+EXPOSE 4000
 
 # Start the app
 CMD ["node", "index.js"]
