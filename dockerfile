@@ -1,5 +1,5 @@
 # Use official Node.js image
-FROM node:23-alpine
+FROM node:slim
 # Set environment variables
 ENV NODE_ENV=production
 # Create app directory
@@ -15,7 +15,7 @@ RUN npm install
 COPY . .
 
 # Expose the app port (adjust if different)
-EXPOSE 3000
+EXPOSE 4000
 
 # Start the app
 CMD ["node", "index.js"]

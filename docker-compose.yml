@@ -1,21 +1,19 @@
-version: '3.8'
-
 services:
   nodeapp:
     build: .
-    container_name: my-node-app
+    container_name: web-qr-node-app
     restart: always
     ports:
-      - "3000:3000"
+      - "4000:4000"
     networks:
       - appnet
 
   nginx:
     image: nginx:latest
-    container_name: my-nginx
+    container_name: web-qr-nginx
     restart: always
     ports:
-      - "80:80"
+      - "81:81"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
     depends_on:
